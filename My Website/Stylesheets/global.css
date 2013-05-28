@@ -1,0 +1,38 @@
+body 
+{	
+	background: #202020 url(../Images/blackorchid.png) repeat fixed 0 0;
+	color: #DDDDDD;
+	overflow: hidden;
+	margin: 0;
+}
+
+.header
+{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	border-bottom: 2px solid #0A67A3;
+	background: #111111;
+}
+
+.headerTitle
+{
+	display: block;
+	float: left;
+	font-size: 20pt;
+	border-right: 2px solid #444444;
+	text-decoration: none;
+	padding: 5px;
+}
+
+.headerTitle:visited
+{
+	color:#DDDDDD;
+}
+
+.footer
+{
+	width: 101%;
+	border-top: 2px solid #FF8E00;
+	background: #111111;
+}
