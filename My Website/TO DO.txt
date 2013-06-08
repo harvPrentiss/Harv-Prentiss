@@ -1,0 +1,8 @@
+TO DO:
+
+- invesitgate colors for links on top
+- fill in the right side of main page
+- make top links collapse to a menu at a certain window size
+- About Page
+- Contact Page
+- Portfolio Page
