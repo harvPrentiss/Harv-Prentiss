@@ -7,6 +7,56 @@ body
 	font-size: 14pt;
 }
 
+#content
+{
+	width: 100%;
+	margin-top: 60px;
+	height: auto;
+	padding: 20px;
+}
+
+.myPicBox
+{
+	margin-right: 10px;
+	width: 15%;
+	float: left;
+}
+
+.myPicBox img 
+{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.introBox
+{
+	float: left;
+	margin: 0px 10px 0px 0px;
+	background-color: rgba(10, 10, 10, 0.5);
+	width: 45%;
+	color: #CCCCCC;
+	font-size: 14pt;
+	padding: 10px;
+}
+
+.introBox h1
+{
+	font-size: 18pt;
+	font-family: 'Trade Winds', cursive;
+	text-align: center;
+	margin: 2px 0px;
+	color: #FFFFFF;
+}
+
+.introBox p 
+{
+	text-indent: 20px;
+}
+
+
+
+/* Header and footer CSS */ 
+
 .header
 {
 	position: fixed;
@@ -55,15 +105,15 @@ body
 	color: #999999;
 }
 
+.navListItem:visited
+{
+	color: #999999;
+}
+
 .navListItem:hover
 {
 	background: #222222;
 	color: #DDDDDD;
-}
-
-.navListItem:visited
-{
-	color: #999999;
 }
 
 .linksBox
@@ -76,30 +126,71 @@ body
 
 .linkedIn
 {
-	background-image: url(../Images/linkedInLogo30Off.png);
+	background: #444444 url(../Images/linkedInLogo.png) no-repeat;
 	line-height: 60px;
 	vertical-align: middle;
-	height: 25px;
+	height: 30px;
 	width: 30px;
+	border: 1px solid #444444;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
 	display: block;
-	margin: 17px 5px;
+	margin: 15px 5px;
 }
 
 .linkedIn:hover
 {
-	background-image: url(../Images/linkedInLogo30On.png);
-}
-
-#content
-{
-	width: 100%;
-	margin-top: 60px;
-	height: auto;
+	background: #007bb6 url(../Images/linkedInLogo.png) ;
 }
 
 .footer
 {
-	width: 101%;
-	border-top: 2px solid #FF8E00;
+	position: fixed;
+	bottom: 0;
+	width: 100%;	
 	background: #111111;
+	height: 60px;
+}
+
+.footerTitle
+{
+	display: block;
+	float: left;
+	font-size: 20pt;
+	font-family: 'Trade Winds', cursive;
+	text-decoration: none;
+	padding: 10px;
+	margin-right: 10px;
+	color: #999999;
+	z-index: 100;
+}
+
+.footerTitle:visited
+{
+	color:#999999;
+}
+
+.footerTitle:hover
+{
+	color: #DDDDDD;
+}
+
+.footerListItem
+{
+	float: left;
+	width: auto;
+	height: 100%;
+	margin: 0px 10px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 60px;
+	padding: 0px 10px;
+	font-family: 'Trade Winds', cursive;
+	font-size: 14pt;
+	color: #999999;
+}
+
+.footerListItem:hover
+{
+	color: #DDDDDD;
 }
