@@ -55,7 +55,25 @@ body
 	text-indent: 20px;
 }
 
+.contactBox
+{
+	background-color: rgba(10, 10, 10, 0.5);
+	width: 80%;
+	color: #CCCCCC;
+	font-size: 14pt;
+	padding: 10px;
+	text-align: center;
+	margin: 0px auto;
+}
 
+.contactBox h1
+{
+	font-size: 18pt;
+	font-family: 'Trade Winds', cursive;
+	text-align: center;
+	margin: 2px 0px;
+	color: #FFFFFF;
+}
 
 /* Header and footer CSS */ 
 
@@ -64,7 +82,7 @@ body
 	position: fixed;
 	top: 0;
 	width: 100%;	
-	background: #111111;
+	background-color: rgba(10, 10, 10, 0.5);
 	height: 60px;
 }
 
@@ -74,22 +92,22 @@ body
 	float: left;
 	font-size: 20pt;
 	font-family: 'Trade Winds', cursive;
-	border-right: 3px solid #999999;
+	border-right: 3px solid #49A9BC;
 	text-decoration: none;
 	padding: 10px;
 	margin-right: 20px;
-	color: #999999;
+	color: #49A9BC;
 	z-index: 99;
 }
 
 .headerTitle:visited
 {
-	color:#999999;
+	color: #49A9BC;
 }
 
 .headerTitle:hover
 {
-	color: #DDDDDD;
+	color: #8EE5E2;
 }
 
 .navListItem
@@ -104,18 +122,18 @@ body
 	padding: 0px 10px;
 	font-family: 'Trade Winds', cursive;
 	font-size: 14pt;
-	color: #999999;
+	color: #49A9BC;
 }
 
 .navListItem:visited
 {
-	color: #999999;
+	color: #49A9BC;
 }
 
 .navListItem:hover
 {
 	background: #222222;
-	color: #DDDDDD;
+	color: #8EE5E2;
 }
 
 .linksBox
@@ -150,7 +168,7 @@ body
 	position: fixed;
 	bottom: 0;
 	width: 100%;	
-	background: #111111;
+	background-color: rgba(10, 10, 10, 0.5);
 	height: 60px;
 }
 
