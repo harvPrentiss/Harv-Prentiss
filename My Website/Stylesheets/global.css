@@ -2,8 +2,8 @@ body
 {	
 	background: #202020 url(../Images/blackorchid.png) repeat fixed 0 0;
 	color: #DDDDDD;
-	overflow: hidden;
 	margin: 0;
+	overflow-x: hidden;
 	font-size: 14pt;
 }
 
@@ -15,6 +15,21 @@ body
 	padding: 20px;
 }
 
+#content h1
+{
+	font-size: 18pt;
+	font-family: 'Trade Winds', cursive;
+	text-align: center;
+	margin: 2px 0px;
+	color: #49A9BC;
+}
+
+#content p 
+{
+	text-indent: 20px;
+}
+
+/* home page styles */
 .myPicBox
 {
 	margin-right: 10px;
@@ -41,19 +56,73 @@ body
 	padding: 10px;
 }
 
-.introBox h1
+.currentNews
 {
-	font-size: 18pt;
-	font-family: 'Trade Winds', cursive;
-	text-align: center;
-	margin: 2px 0px;
-	color: #FFFFFF;
+	float: left;
+	margin: 0px;
+	background-color: rgba(10, 10, 10, 0.5);
+	width: 28%;
+	color: #CCCCCC;
+	font-size: 14pt;
+	padding: 10px;
 }
 
-.introBox p 
+.currentNews a 
 {
-	text-indent: 20px;
+	text-decoration: none;
+	color: #ffb116;
 }
+
+.currentNews a:visited
+{
+	color: #ffb116;
+}
+
+.currentNews a:hover
+{
+	color: #ffc354;
+}
+
+/* End home page styles */
+
+/* About page styles*/
+
+.bioBox
+{
+	float: left;
+	margin: 0px 10px 0px 0px;
+	background-color: rgba(10, 10, 10, 0.5);
+	width: 28%;
+	color: #CCCCCC;
+	font-size: 14pt;
+	padding: 10px;
+}
+
+.expBox
+{
+	float: left;
+	margin: 0px 10px 0px 0px;
+	background-color: rgba(10, 10, 10, 0.5);
+	width: 28%;
+	color: #CCCCCC;
+	font-size: 14pt;
+	padding: 10px;
+}
+
+.skillsBox
+{
+	float: left;
+	margin: 0px 10px 0px 0px;
+	background-color: rgba(10, 10, 10, 0.5);
+	width: 28%;
+	color: #CCCCCC;
+	font-size: 14pt;
+	padding: 10px;
+}
+
+/* End about page styles */
+
+/* Contact Page styles */
 
 .contactBox
 {
@@ -74,6 +143,9 @@ body
 	margin: 2px 0px;
 	color: #FFFFFF;
 }
+
+/* End contactpage styles */
+
 
 /* Header and footer CSS */ 
 
