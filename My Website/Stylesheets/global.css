@@ -1,3 +1,8 @@
+html
+{
+	height: 100%;
+}
+
 body 
 {	
 	background: #202020 url(../Images/blackorchid.png) repeat fixed 0 0;
@@ -5,13 +10,14 @@ body
 	margin: 0;
 	overflow-x: hidden;
 	font-size: 14pt;
+	height: 100%;
 }
 
 #content
 {
 	width: 100%;
-	margin-top: 60px;
 	height: auto;
+	margin-top: 60px;
 	padding: 20px;
 }
 
@@ -24,9 +30,34 @@ body
 	color: #49A9BC;
 }
 
+#content h2
+{
+	font-size: 14pt;
+	font-family: 'Trade Winds', cursive;
+	text-align: center;
+	margin: 2px 0px;
+	color: #e06c00;
+}
+
 #content p 
 {
 	text-indent: 20px;
+}
+
+#content a 
+{
+	text-decoration: none;
+	color: #96bf49;
+}
+
+#content a:visited
+{
+	color: #96bf49;
+}
+
+#content a:hover
+{
+	color: #d9e78f;
 }
 
 /* home page styles */
@@ -67,22 +98,6 @@ body
 	padding: 10px;
 }
 
-.currentNews a 
-{
-	text-decoration: none;
-	color: #ffb116;
-}
-
-.currentNews a:visited
-{
-	color: #ffb116;
-}
-
-.currentNews a:hover
-{
-	color: #ffc354;
-}
-
 /* End home page styles */
 
 /* About page styles*/
@@ -92,32 +107,61 @@ body
 	float: left;
 	margin: 0px 10px 0px 0px;
 	background-color: rgba(10, 10, 10, 0.5);
-	width: 28%;
+	width: 45%;
 	color: #CCCCCC;
 	font-size: 14pt;
 	padding: 10px;
 }
 
+.expSkills
+{
+	float: left;	
+	width: 45%;
+	color: #CCCCCC;
+	font-size: 14pt;
+}
+
 .expBox
 {
 	float: left;
-	margin: 0px 10px 0px 0px;
+	width: 100%;
 	background-color: rgba(10, 10, 10, 0.5);
-	width: 28%;
-	color: #CCCCCC;
-	font-size: 14pt;
+	margin-bottom: 5px; 
 	padding: 10px;
 }
 
 .skillsBox
 {
 	float: left;
-	margin: 0px 10px 0px 0px;
+	width: 100%;
 	background-color: rgba(10, 10, 10, 0.5);
-	width: 28%;
-	color: #CCCCCC;
-	font-size: 14pt;
+	margin-top: 5px;
 	padding: 10px;
+}
+
+.langBox
+{
+	float:left;
+	width: 45%;
+	text-align: center;
+	margin-right: 5px;
+}
+
+.softBox
+{
+	float:right;
+	width: 45%;
+	text-align: center;
+	margin-left: 5px;
+}
+
+.skillList
+{
+	display: inline-block;
+	text-align: left;
+	padding: 0px;
+	margin: 5px auto;
+	list-style: none;
 }
 
 /* End about page styles */
@@ -154,7 +198,7 @@ body
 	position: fixed;
 	top: 0;
 	width: 100%;	
-	background-color: rgba(10, 10, 10, 0.5);
+	background-color: rgb(10, 10, 10);
 	height: 60px;
 }
 
@@ -235,54 +279,3 @@ body
 	background: #007bb6 url(../Images/linkedInLogo.png) ;
 }
 
-.footer
-{
-	position: fixed;
-	bottom: 0;
-	width: 100%;	
-	background-color: rgba(10, 10, 10, 0.5);
-	height: 60px;
-}
-
-.footerTitle
-{
-	display: block;
-	float: left;
-	font-size: 20pt;
-	font-family: 'Trade Winds', cursive;
-	text-decoration: none;
-	padding: 10px;
-	margin-right: 10px;
-	color: #999999;
-	z-index: 100;
-}
-
-.footerTitle:visited
-{
-	color:#999999;
-}
-
-.footerTitle:hover
-{
-	color: #DDDDDD;
-}
-
-.footerListItem
-{
-	float: left;
-	width: auto;
-	height: 100%;
-	margin: 0px 10px;
-	text-align: center;
-	text-decoration: none;
-	line-height: 60px;
-	padding: 0px 10px;
-	font-family: 'Trade Winds', cursive;
-	font-size: 14pt;
-	color: #999999;
-}
-
-.footerListItem:hover
-{
-	color: #DDDDDD;
-}
