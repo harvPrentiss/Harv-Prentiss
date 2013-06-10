@@ -102,14 +102,30 @@ body
 
 /* About page styles*/
 
+.bioInterestBox
+{
+	float: left;
+	width: 45%;	
+	margin: 0px 15px 0px 0px;
+	color: #CCCCCC;
+	font-size: 14pt;
+}
+
 .bioBox
 {
 	float: left;
-	margin: 0px 10px 0px 0px;
 	background-color: rgba(10, 10, 10, 0.5);
-	width: 45%;
-	color: #CCCCCC;
-	font-size: 14pt;
+	width: 100%;	
+	padding: 10px;
+	margin-bottom: 5px;
+}
+
+.interestBox
+{
+	float: left;
+	margin-top: 5px;
+	background-color: rgba(10, 10, 10, 0.5);
+	width: 100%;	
 	padding: 10px;
 }
 
@@ -117,6 +133,7 @@ body
 {
 	float: left;	
 	width: 45%;
+	margin: 0px 0px 0px 15px;
 	color: #CCCCCC;
 	font-size: 14pt;
 }
