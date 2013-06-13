@@ -13,6 +13,13 @@ body
 	height: 100%;
 }
 
+.clear
+{
+	clear:both;
+	height: 0;
+	overflow: hidden;
+}
+
 #content
 {
 	width: 100%;
@@ -92,7 +99,7 @@ body
 	float: left;
 	margin: 0px;
 	background-color: rgba(10, 10, 10, 0.5);
-	width: 28%;
+	width: 45%;
 	color: #CCCCCC;
 	font-size: 14pt;
 	padding: 10px;
@@ -181,6 +188,12 @@ body
 	list-style: none;
 }
 
+.portfolioBox
+{
+	width: 90%;
+	margin: 0px auto;
+}
+
 /* End about page styles */
 
 /* Contact Page styles */
@@ -217,6 +230,7 @@ body
 	width: 100%;	
 	background-color: rgb(10, 10, 10);
 	height: 60px;
+	z-index: 50;
 }
 
 .headerTitle
@@ -265,9 +279,38 @@ body
 
 .navListItem:hover
 {
+	color: #8EE5E2;
+}
+
+.navListItemActive
+{
+	float: left;
+	width: auto;
+	height: 100%;
+	margin: 0px 10px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 60px;
+	padding: 0px 10px;
+	font-family: 'Trade Winds', cursive;
+	font-size: 14pt;
+	color: #8EE5E2;
+	background: #222222;
+	
+}
+
+.navListItemActive:visited
+{
 	background: #222222;
 	color: #8EE5E2;
 }
+
+.navListItemActive:hover
+{
+	background: #222222;
+	color: #8EE5E2;
+}
+
 
 .linksBox
 {

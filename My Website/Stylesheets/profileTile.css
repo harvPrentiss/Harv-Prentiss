@@ -5,7 +5,7 @@
     -webkit-perspective: 1000;
     -moz-perspective: 1000;
 
-    margin: 5px;
+    margin: 0px auto;
 }
 
 /* flip the pane when hovered */
@@ -19,9 +19,8 @@
 
 .flip-container, .front, .back 
 {
-    width: 350px;
-    height:250px;
-    float:left;    
+    width: 660px;
+    height:381px; 
 }
 
 /* flip speed goes here */
@@ -36,7 +35,7 @@
     transition: 0.5s linear .5s;
     transform-style: preserve-3d;
 
-    height: 250px;
+    height: 381px;
 
     position: relative;
 }
@@ -69,17 +68,41 @@
     color: #49A9BC;
 }
 
+.titleBar
+{
+    font-size: 14pt;
+    font-family: 'Trade Winds', cursive;
+    text-align: center;
+    margin: 0px 0px;
+    color: #e06c00;
+    height: 8%;
+}
+
 .imgBox1
 {
-    width: 95%;
-    height: 95%;
-    padding: 5px;
+    width: 100%;
+    height: 92%;
 }
 
 .imgBox1 img 
 {
+    display: block;
     width: 100%;
     height: 100%;
+}
+
+.imgBox4
+{
+    float: left;
+    width:50%;
+    height:46%;
+}
+
+.imgBox4 img 
+{
+    display: block;
+    width: 98%;
+    height: 98%;
 }
 
 /* back, initially hidden pane */
@@ -103,8 +126,26 @@
     font-family: 'Fjalla One', sans-serif;
 }
 
+.back p 
+{
+    margin: 2px 5px;
+
+}
+
+.aboutBox
+{
+    float: left;
+    width: 100%;
+}
+
+.featureBox
+{
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
 #backContainer
 {
-    width: 100%;
-    padding: 5px;
+    height: 100%;
 }
