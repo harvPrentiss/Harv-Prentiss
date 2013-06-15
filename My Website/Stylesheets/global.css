@@ -25,7 +25,7 @@ body
 	width: 100%;
 	height: auto;
 	margin-top: 60px;
-	padding: 20px;
+	padding: 15px;
 }
 
 #content h1
@@ -192,6 +192,7 @@ body
 {
 	width: 90%;
 	margin: 0px auto;
+	background-color: rgba(10, 10, 10, 0.5);
 }
 
 /* End about page styles */
