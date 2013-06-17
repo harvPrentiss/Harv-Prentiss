@@ -2,35 +2,48 @@
 .flip-container 
 {    
     -webkit-perspective: 1000;
+    -o-perspective: 1000;
     perspective: 1000;
 
     margin: 0px auto;
-}
-
-/* flip the pane when hovered */
-.flip-container:hover .flipper, .flip-container.hover .flipper 
-{
-    -o-transform: rotateX(180deg);
-    -webkit-transform: rotateX(180deg);
-    -moz-transform: rotateX(180deg);
-    transform: rotateX(180deg);
 }
 
 .flip-container, .front, .back 
 {
     width: 660px;
     height:381px; 
+    -o-transition: 0.5s linear .5s;
+    -webkit-transition: 0.5s linear .5s;
+    transition: 0.5s linear .5s;
+    -o-transform-style: preserve-3d;    
+    -webkit-transform-style: preserve-3d;    
+    transform-style: preserve-3d;
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .front, .flip-container.hover .front 
+{
+    -o-transform: perspective(1000px) rotateX(180deg);
+    -webkit-transform: perspective(1000px) rotateX(180deg);
+    -moz-transform: perspective(1000px) rotateX(180deg);
+    transform: perspective(1000px) rotateX(180deg);
+}
+
+.flip-container:hover .back, .flip-container.hover .back
+{
+    -o-transform: perspective(1000px) rotateX(0deg);
+    -webkit-transform: perspective(1000px) rotateX(0deg);
+    -moz-transform: perspective(1000px) rotateX(0deg);
+    transform: perspective(1000px) rotateX(0deg);
 }
 
 /* flip speed goes here */
 .flipper 
-{
-    -o-transition: 0.5s linear .5s;
-    -o-transform-style: preserve-3d;
-    -webkit-transition: 0.5s linear .5s;
-    -webkit-transform-style: preserve-3d;
-    transition: 0.5s linear .5s;
-    transform-style: preserve-3d;
+{    
+    -o-transform: perspective(1000px);
+    -webkit-transform: perspective(1000px);
+    -moz-transform: perspective(1000px);
+    transform: perspective(1000px);
 
     height: 381px;
 
@@ -107,10 +120,10 @@
 /* back, initially hidden pane */
 .back 
 {
-    -o-transform: rotateX(180deg);
-    -webkit-transform: rotateX(180deg);
-    -moz-transform: rotateX(180deg);
-    transform: rotateX(180deg);
+    -o-transform: perspective(1000px) rotateX(180deg);
+    -webkit-transform: perspective(1000px) rotateX(180deg);
+    -moz-transform: perspective(1000px) rotateX(180deg);
+    transform: perspective(1000px) rotateX(180deg);
     font-size: 14pt;
 }
 
