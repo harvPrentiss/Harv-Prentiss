@@ -254,6 +254,20 @@ body
 	color: #8EE5E2;
 }
 
+#menuIcon
+{
+	display:hidden;
+	width: 40px;
+	height:40px;
+	background: transparent url(../Images/menuIcon.png) center;
+}
+
+a:hover#menuIcon 
+{
+
+	background-color: #222222;
+}
+
 .navListItem
 {
 	float: left;
@@ -337,3 +351,7 @@ body
 	background: #007bb6 url(../Images/linkedInLogo.png) ;
 }
 
+@media only screen and (max-width:680px)
+{
+	
+}
