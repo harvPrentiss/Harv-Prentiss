@@ -161,3 +161,18 @@
 {
     height: 100%;
 }
+
+
+@media only screen and (max-width:760px)
+{
+    .flip-container, .front, .back 
+    {
+        width: 330px;
+        height:500px; 
+    }
+
+    .flipper
+    {
+        height: 500px;
+    }
+}

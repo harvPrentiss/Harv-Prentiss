@@ -106,8 +106,8 @@ body
 .bioInterestBox
 {
 	float: left;
-	width: 45%;	
-	margin: 0px 15px 0px 0px;
+	width: 47%;	
+	margin: 0px 0px 0px 15px;
 	color: #CCCCCC;
 	font-size: 14pt;
 }
@@ -134,8 +134,8 @@ body
 .expSkills
 {
 	float: left;	
-	width: 45%;
-	margin: 0px 0px 0px 15px;
+	width: 47%;
+	margin: 0px 15px 0px 0px;
 	color: #CCCCCC;
 	font-size: 14pt;
 }
@@ -154,7 +154,7 @@ body
 	float: left;
 	width: 100%;
 	background-color: rgba(10, 10, 10, 0.5);
-	margin-top: 5px;
+	margin: 5px 0px;
 	padding: 10px;
 }
 
@@ -254,17 +254,21 @@ body
 	color: #8EE5E2;
 }
 
-#menuIcon
+.nav-mobile 
 {
-	display:hidden;
-	width: 40px;
-	height:40px;
-	background: transparent url(../Images/menuIcon.png) center;
+    display:none; /* Hide from browsers that don't support media queries */
+    float: left;
+    background:#000000 url(../Images/menuIcon.png) no-repeat center center;
+    height:40px;
+    width:40px;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    margin: 10px 5px;
 }
 
-a:hover#menuIcon 
+.nav-mobile:hover 
 {
-
 	background-color: #222222;
 }
 
@@ -281,6 +285,7 @@ a:hover#menuIcon
 	font-family: 'Trade Winds', cursive;
 	font-size: 14pt;
 	color: #49A9BC;
+	z-index: 10;
 }
 
 .navListItem:visited
@@ -308,6 +313,7 @@ a:hover#menuIcon
 	font-size: 14pt;
 	color: #8EE5E2;
 	border-bottom: 3px solid #49A9BC;
+	z-index: 10;
 
 	
 }
@@ -351,7 +357,82 @@ a:hover#menuIcon
 	background: #007bb6 url(../Images/linkedInLogo.png) ;
 }
 
-@media only screen and (max-width:680px)
+@media only screen and (max-width:768px)
 {
-	
+
+	#content
+	{
+		width: 95%;
+	}
+
+	.navListItem
+	{
+		float: none;
+		margin: 0px;
+		width: 100%;
+	}
+
+	.navListItem:hover
+	{
+		color: #8EE5E2;
+		background: transparent;
+	}
+
+	.navListItemActive
+	{
+		float: none;
+		margin: 0px;
+		width: 100%;
+		border:none;
+	}
+
+	.navListItemActive:hover
+	{
+		color: #8EE5E2;
+		background: transparent;
+	}
+
+	.nav-mobile 
+	{
+        display:block;
+    }
+
+    .navList 
+    {
+    	display: none;
+    }
+
+    .nav-active
+    {
+    	display:block;
+    	position: absolute;
+    	left: 220px;
+    	top: 60px;
+    	z-index: 999;
+    	background: #000000;
+    	border: 1px solid #8EE5E2;
+    }
+
+    .expSkills, .bioInterestBox
+    {
+    	width: 95%;
+    	margin: 0px 15px 0px 0px;
+    }
+
+    .bioBox
+    {
+    	margin-top: 5px;
+    }
+
+    .introBox
+	{
+		width: 95%;
+		margin: 0px 0px 5px 0px;
+	}
+
+	.currentNews
+	{
+		width: 95%;
+		margin: 5px 0px 0px 0px;
+	}
 }
