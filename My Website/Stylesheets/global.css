@@ -357,7 +357,38 @@ body
 	background: #007bb6 url(../Images/linkedInLogo.png) ;
 }
 
-@media only screen and (max-width:768px)
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px)
+{
+	#content
+	{
+		width: 95%;
+	}
+	
+	.expSkills, .bioInterestBox
+    {
+    	width: 95%;
+    	margin: 0px 15px 0px 0px;
+    }
+
+    .bioBox
+    {
+    	margin-top: 5px;
+    }
+
+    .introBox
+	{
+		width: 95%;
+		margin: 0px 0px 5px 0px;
+	}
+
+	.currentNews
+	{
+		width: 95%;
+		margin: 5px 0px 0px 0px;
+	}
+}
+
+@media only screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)
 {
 
 	#content
