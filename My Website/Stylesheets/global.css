@@ -183,6 +183,8 @@ body
 	list-style: none;
 }
 
+/* porftfolio Styles */
+
 .portfolioBox
 {
 	width: 94%;
@@ -190,6 +192,59 @@ body
 	padding: 10px;
 	background-color: rgba(10, 10, 10, 0.5);
 }
+
+.project{
+	box-sizing: border-box;
+	margin: 0 auto 40px auto;
+	width: 660px;
+}
+
+.titleBar
+{
+    font-size: 14pt;
+    font-family: 'Trade Winds', cursive;
+    text-align: center;
+    margin: 0px 0px;
+    color: #e06c00;
+    height: 8%;
+    background-color: black;
+}
+
+.imgBox1
+{
+    width: 98%;
+    height: 92%;
+    margin: auto;
+}
+
+.imgBox1 img 
+{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.imgBox4
+{
+    float: left;
+    width:49%;
+    height:45%;
+    padding-left: 2px;
+    padding-bottom: 2px;
+}
+
+.imgBox4 img 
+{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.expandedContent{
+	background-color: black;
+}
+
+
 
 /* End about page styles */
 
@@ -252,24 +307,6 @@ body
 .headerTitle:hover
 {
 	color: #8EE5E2;
-}
-
-.nav-mobile 
-{
-    display:none; /* Hide from browsers that don't support media queries */
-    float: left;
-    background:#000000 url(../Images/menuIcon.png) no-repeat center center;
-    height:40px;
-    width:40px;
-    border-radius:5px;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    margin: 10px 5px;
-}
-
-.nav-mobile:hover 
-{
-	background-color: #222222;
 }
 
 .navListItem
@@ -357,7 +394,7 @@ body
 	background: #007bb6 url(../Images/linkedInLogo.png) ;
 }
 
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px)
+@media (min-width: 768px) and (max-width: 1024px)
 {
 	#content
 	{
@@ -388,61 +425,13 @@ body
 	}
 }
 
-@media only screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)
+@media (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2)
 {
 
 	#content
 	{
 		width: 95%;
 	}
-
-	.navListItem
-	{
-		float: none;
-		margin: 0px;
-		width: 100%;
-	}
-
-	.navListItem:hover
-	{
-		color: #8EE5E2;
-		background: transparent;
-	}
-
-	.navListItemActive
-	{
-		float: none;
-		margin: 0px;
-		width: 100%;
-		border:none;
-	}
-
-	.navListItemActive:hover
-	{
-		color: #8EE5E2;
-		background: transparent;
-	}
-
-	.nav-mobile 
-	{
-        display:block;
-    }
-
-    .navList 
-    {
-    	display: none;
-    }
-
-    .nav-active
-    {
-    	display:block;
-    	position: absolute;
-    	left: 220px;
-    	top: 60px;
-    	z-index: 999;
-    	background: #000000;
-    	border: 1px solid #8EE5E2;
-    }
 
     .expSkills, .bioInterestBox
     {
