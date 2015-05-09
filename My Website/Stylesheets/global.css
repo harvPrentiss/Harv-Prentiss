@@ -13,11 +13,10 @@ body
 	height: 100%;
 }
 
-.clear
-{
-	clear:both;
-	height: 0;
-	overflow: hidden;
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 #content
@@ -201,13 +200,17 @@ body
 
 .titleBar
 {
-    font-size: 14pt;
-    font-family: 'Trade Winds', cursive;
-    text-align: center;
-    margin: 0px 0px;
-    color: #e06c00;
-    height: 8%;
+    height: 10%;
     background-color: black;
+    text-align: center;
+}
+
+.title{
+	display: inline-block;
+	font-size: 14pt;
+    font-family: 'Trade Winds', cursive;
+    margin: 0 auto;
+    color: #e06c00 !important;
 }
 
 .imgBox1
@@ -242,6 +245,30 @@ body
 
 .expandedContent{
 	background-color: black;
+	display: none;
+}
+
+.expansionArrow{
+	float: right;
+	text-decoration: none;
+	background: url(../Images/expansionArrowSprite.png) no-repeat;
+	height: 39px;
+	width: 28px;
+}
+
+.gitHubLink{
+	display: block;
+	box-sizing: border-box;
+	float: right;
+	text-decoration: none;
+	background: url(../Images/gitHubSprite.png) no-repeat;
+	height: 20px;
+	width: 74px;
+	margin-bottom: 5px;
+}
+
+.gitHubLink:hover{
+	background-position: 0px -20px;
 }
 
 
